@@ -1,100 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Resume</title>
+      <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <img src="Img.JPG" alt="мой аватар" width="200">
-  <h1>Жумагул уулу Азамат</h1>
-  <p>Я <strong>разработчик</strong>  бар-департамента <strong>Essence Lab</strong> </p>
-  <p>Я люблю <em>слушать музыку, заниматься спортом и программировать</em></p>
+      <div class="container">
+        <div class="info">
+        <img src="Img.JPG" alt="мой аватар" class="avatar">
 
-  <h4>Список социальных сетей:</h4>
+        <div class="info-text">
 
-  <a href="https://t.me/azamatech">Telegram</a>
-  |
-  <a href="https://www.instagram.com/barista_azamat/?hl=en">Инстаграм</a>
+        <h1>Жумагул уулу Азамат</h1>
+        <p>Я <strong>разработчик</strong>  бар-департамента <strong>Essence Lab</strong> </p>
+        <p>Я люблю <em>слушать музыку, заниматься спортом и программировать</em></p>
+  
 
-  <h2>Мои Хобби</h2>
+    <h4>Список социальных сетей:</h4>
 
-<ol>
-<li>Спорт</li>
-<li>Рисовать</li>
-<li>Проверять почту</li>
-<li>Готовить вкусные напитки</li>
-</ol>
+        <a href="https://t.me/azamatech">Telegram</a>
+        |
+        <a href="https://www.instagram.com/barista_azamat/?hl=en">Инстаграм</a>
+      </div>
+    </div>
 
-<h2>Опыт работы</h2>
+      <div class="card bg-green">
+      <h2>Мои Хобби</h2>
 
-<table>
+    <ol class="list">
+      <li>Спорт</li>
+        <li>Рисовать</li>
+        <li>Проверять почту</li>
+      <li>Готовить вкусные напитки</li>
+    </ol>
+  </div>
 
-  <thead>
-    <tr>
-    <th>Компания</th>
-    <th>Должность</th>
-    <th>Год</th>
-  </tr>
-  </thead>
+    <div class="card bg-yellow">
+    <h2>Опыт работы</h2>
 
-    <tbody>
-      <tr>
-        <td>Coffee House Company</td>
-        <td>Barista</td>
-        <td>2017</td>
-      </tr>
+    <table class="table">
 
+      <!-- <thead>
         <tr>
-          <td>IQ Coffee</td>
-          <td>Head Barista</td>
-          <td>2018</td>
-        </tr>
+          <th>Компания</th>
+          <th>Должность</th>
+          <th>Год</th>
+      </tr>
+      </thead> -->
 
+        <tbody>
           <tr>
-            <td>The Ministry of Coffee</td>
-            <td>Senior Barista</td>
-            <td>2019</td>
+            <td>Coffee House Company</td>
+            <td>Barista</td>
+            <td>2017</td>
           </tr>
 
             <tr>
-              <td>Essence lab</td>
-              <td>Разработчик</td>
-              <td>2021</td>
+            <td>IQ Coffee</td>
+              <td>Head Barista</td>
+            <td>2018</td>
             </tr>
 
-           
+              <tr>
+              <td>The Ministry of Coffee</td>
+                <td>Senior Barista</td>
+              <td>2019</td>
+              </tr>
 
+              <tr>
+                <td>Essence lab</td>
+                  <td>Разработчик</td>
+                  <td>2021</td>
+                </tr>
+        </tbody>
+    </table>
+    </div>
 
-    </tbody>
-</table>
-
-<div>
-
-  <form>
-   <h2>Связаться со мной </h2>
-    <div>
-    <label for="name">Имя</label>
-    <input type="name" id="name" placeholder="Ваше имя">
-   </div>
-
-   <div>
-  <label for="email">Email</label>
-  <input type="email" id="email" placeholder="Введите ваше имя">
-  </div>
-  
   <div>
-  <label for="message">Ваше сообщение</label>
-  <br>
-  <textarea id="message" cols="25" rows="10" placeholder="Введите сообщение..."></textarea>
-  <br>
-  <input type="Submit" value="Отправить!">
-  
- 
-</div>
-</form>
 
+    <form action="/" class="form">
+
+    <h2>Связаться со мной </h2>
+     
+    <div class="form-row">
+      <div class="form-group">
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" placeholder="Введите имя">
+    </div>
+  
+    <div class="form-group">
+    <label for="email">Ваш email:</label>
+    <input type="email" id="email" placeholder="Введите email">
+    </div>
+  </div>
+    
+    <div class="form-group">
+    <label for="message">Ваше сообщение</label>
+    <br>
+    <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение"
+    ></textarea>
+    <br>
+    
+  </div>
+
+  <input class="btn" type="Submit" value="Отправить!">
+  </form>
+
+  </div>
 </div>
   
 
